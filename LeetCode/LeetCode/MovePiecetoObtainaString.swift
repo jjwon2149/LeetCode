@@ -16,8 +16,8 @@ class MovePiecetoObtainaString {
             return false
         }
         
-        let startPosition = start.enumerated().filter{ $0.element != "_"} //L의 Index와 Value
-        let targetPosition = target.enumerated().filter{ $0.element != "_"} // R의 Index와 Value
+        let startPosition = start.enumerated().filter{ $0.element != "_"}
+        let targetPosition = target.enumerated().filter{ $0.element != "_"}
         
         if startPosition.map({ $0.element }) != targetPosition.map({ $0.element }) {
             return false
